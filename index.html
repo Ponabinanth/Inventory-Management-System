@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseStock Inventory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<div id="messageBox" class="opacity-0 fixed top-5 right-5 z-50 transition-all duration-300 transform translate-x-10"></div>
+
+<main class="container mx-auto p-4 sm:p-6 lg:p-10">
+  <section class="hero">
+    <div>
+      <p class="kicker">Inventory Intelligence</p>
+      <h1>PulseStock Dashboard</h1>
+      <p class="sub">Track stock movement, identify low inventory quickly, and keep your operations lean.</p>
+      <div class="chips">
+        <span id="liveChip" class="chip">Live API: Connecting...</span>
+        <span class="chip">Fast CRUD</span>
+        <span class="chip">Action Alerts</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div>Operator</div>
+      <strong id="displayUserId">local-admin</strong>
+      <div id="todayDate"></div>
+    </div>
+  </section>
+
+  <section class="stats mt-6">
+    <article><p>Unique Products</p><h3 id="totalItems">0</h3></article>
+    <article><p>Inventory Value</p><h3 id="totalValue">$0.00</h3></article>
+    <article><p>Low Stock Items</p><h3 id="lowStockCount">0</h3></article>
+    <article><p>Average Unit Price</p><h3 id="avgPrice">$0.00</h3></article>
+  </section>
+
+  <section class="panel mt-6 controls">
+    <input id="searchKeyword" placeholder="Search by ID, name, category, supplier">
+    <select id="statusFilter"><option value="all">All stock levels</option><option value="low">Low stock (&lt;5)</option><option value="healthy">Healthy stock (5+)</option></select>
+    <select id="sortBy"><option value="updated">Sort: Latest updated</option><option value="name">Sort: Name A-Z</option><option value="price">Sort: Highest price</option><option value="qty">Sort: Lowest quantity</option></select>
+    <button id="clearFiltersButton" class="btn-light" type="button">Clear</button>
+    <button id="refreshButton" class="btn-light" type="button">Refresh</button>
+    <button id="exportCsvButton" class="btn-light" type="button">Export CSV</button>
+    <button id="openAddButton" class="btn-primary" type="button">+ Add Product</button>
+  </section>
+
+  <section class="panel mt-6">
+    <div class="alerts-head"><h3>Action Alerts</h3><span id="alertsSummary">No active alerts</span></div>
+    <div id="alertsList" class="alerts-list"><p class="empty">No low-stock alerts right now.</p></div>
+  </section>
+
+  <section class="panel mt-6">
+    <div class="alerts-head"><h3>Notify Team</h3><span>Email and SMS alerts</span></div>
+    <div class="notify-grid">
+      <input id="emailRecipient" placeholder="Email recipient (example@company.com)">
+      <button id="sendEmailAlertButton" class="btn-light" type="button">Send Email Alert</button>
+      <input id="smsRecipient" placeholder="SMS recipient (+1XXXXXXXXXX)">
+      <button id="sendSmsAlertButton" class="btn-light" type="button">Send SMS Alert</button>
+    </div>
+    <div class="alerts-head"><h3>Notification History</h3><span id="notificationSummary">No notifications sent</span></div>
+    <div id="notificationsList" class="alerts-list"><p class="empty">No notification history.</p></div>
+  </section>
+
+  <section class="panel mt-6">
+    <div class="table-shell">
+      <table>
+        <thead><tr><th>ID</th><th>Name</th><th>Category</th><th class="text-right">Price</th><th class="text-right">Qty</th><th>Supplier</th><th>Manuf. Date</th><th>Actions</th></tr></thead>
+        <tbody id="inventoryTableBody"><tr><td colspan="8" class="empty">Loading...</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<div id="inventoryModal" class="fixed inset-0 modal-backdrop hidden z-40 flex items-center justify-center p-4">
+  <div class="panel modal-card w-full max-w-2xl">
+    <h2 id="formTitle">Add New Product</h2>
+    <form id="productForm">
+      <input type="hidden" id="productDocId">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <input id="productIdInput" placeholder="Product ID" required>
+        <input id="productNameInput" placeholder="Product Name" required>
+        <input id="categoryInput" placeholder="Category" required>
+        <input id="supplierInput" placeholder="Supplier" required>
+        <input id="priceInput" type="number" min="0.01" step="0.01" placeholder="Price" required>
+        <input id="quantityInput" type="number" min="0" step="1" placeholder="Quantity" required>
+        <input id="manufacturingDateInput" class="sm:col-span-2" type="date" required>
+      </div>
+      <div class="actions"><button id="cancelModalButton" type="button" class="btn-light">Cancel</button><button type="submit" class="btn-primary">Save Product</button></div>
+    </form>
+  </div>
+</div>
+
+<div id="deleteConfirmationModal" class="fixed inset-0 modal-backdrop hidden z-50 flex items-center justify-center p-4">
+  <div class="panel modal-card w-full max-w-sm">
+    <h3>Delete Product</h3>
+    <p>Delete <strong id="deleteProductName"></strong> permanently?</p>
+    <div class="actions"><button id="cancelDeleteButton" class="btn-light" type="button">Cancel</button><button id="executeDeleteButton" class="btn-danger" type="button">Delete</button></div>
+  </div>
+</div>
+</body>
+</html>
