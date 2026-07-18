@@ -1,0 +1,52 @@
+[
+  {
+    "id": "u-1",
+    "username": "local-admin",
+    "name": "Super Administrator",
+    "role": "Super Admin",
+    "email": "admin@pulsetock.com",
+    "status": "Active",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=local-admin",
+    "createdAt": "2026-07-18T03:08:24.599Z"
+  },
+  {
+    "id": "u-2",
+    "username": "mgr-alex",
+    "name": "Alex Rivera",
+    "role": "Inventory Manager",
+    "email": "alex.mgr@pulsetock.com",
+    "status": "Active",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=mgr-alex",
+    "createdAt": "2026-07-18T03:08:24.602Z"
+  },
+  {
+    "id": "u-3",
+    "username": "sales-sarah",
+    "name": "Sarah Jenkins",
+    "role": "Sales Executive",
+    "email": "sarah.sales@pulsetock.com",
+    "status": "Active",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=sales-sarah",
+    "createdAt": "2026-07-18T03:08:24.602Z"
+  },
+  {
+    "id": "u-4",
+    "username": "wh-david",
+    "name": "David Chen",
+    "role": "Warehouse Staff",
+    "email": "david.wh@pulsetock.com",
+    "status": "Active",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=wh-david",
+    "createdAt": "2026-07-18T03:08:24.602Z"
+  },
+  {
+    "id": "u-5",
+    "username": "cust-john",
+    "name": "John Doe",
+    "role": "Customer",
+    "email": "john.doe@client.com",
+    "status": "Active",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=cust-john",
+    "createdAt": "2026-07-18T03:08:24.602Z"
+  }
+]

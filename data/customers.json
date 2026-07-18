@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c-1",
+    "name": "Acme Corp",
+    "email": "orders@acmecorp.com",
+    "phone": "+1 555-019-2834",
+    "tier": "VIP",
+    "totalSpent": 14500,
+    "status": "Active"
+  },
+  {
+    "id": "c-2",
+    "name": "TechNova Inc",
+    "email": "procurement@technova.io",
+    "phone": "+1 555-018-9981",
+    "tier": "VIP",
+    "totalSpent": 28900,
+    "status": "Active"
+  },
+  {
+    "id": "c-3",
+    "name": "Global Logistics",
+    "email": "info@globallogistics.com",
+    "phone": "+1 555-014-7721",
+    "tier": "Regular",
+    "totalSpent": 4200,
+    "status": "Active"
+  },
+  {
+    "id": "c-4",
+    "name": "Apex Design Studio",
+    "email": "hello@apexdesign.co",
+    "phone": "+1 555-012-3345",
+    "tier": "New",
+    "totalSpent": 850,
+    "status": "Active"
+  }
+]

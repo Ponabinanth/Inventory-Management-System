@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sup-1",
+    "name": "Dell Enterprise",
+    "contact": "contact@dell.com",
+    "phone": "+1 800-456-3355",
+    "category": "Electronics",
+    "rating": 4.9,
+    "status": "Active"
+  },
+  {
+    "id": "sup-2",
+    "name": "Logitech Systems",
+    "contact": "b2b@logitech.com",
+    "phone": "+1 800-231-7717",
+    "category": "Electronics",
+    "rating": 4.7,
+    "status": "Active"
+  },
+  {
+    "id": "sup-3",
+    "name": "Heritage Dairies",
+    "contact": "supply@heritagedairy.com",
+    "phone": "+91 44-2450-9999",
+    "category": "Food & Beverage",
+    "rating": 4.5,
+    "status": "Active"
+  },
+  {
+    "id": "sup-4",
+    "name": "IKEA Solutions",
+    "contact": "business@ikea.com",
+    "phone": "+1 888-888-4532",
+    "category": "Furniture",
+    "rating": 4.8,
+    "status": "Active"
+  },
+  {
+    "id": "sup-5",
+    "name": "Sony India",
+    "contact": "sales@sony.co.in",
+    "phone": "+91 1800-103-7799",
+    "category": "Electronics",
+    "rating": 4.6,
+    "status": "Active"
+  }
+]

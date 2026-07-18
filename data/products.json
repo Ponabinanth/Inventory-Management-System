@@ -1,0 +1,122 @@
+[
+  {
+    "id": "7867ee34-5254-44e4-b225-b5a3c4f8f4d8",
+    "productId": "PROD-LPT",
+    "productName": "Enterprise Laptop",
+    "category": "Electronics",
+    "price": 999.99,
+    "quantity": 25,
+    "warehouseStock": {
+      "Chennai": 10,
+      "Coimbatore": 10,
+      "Bangalore": 5
+    },
+    "supplier": "Dell Enterprise",
+    "manufacturingDate": "2026-01-10",
+    "expiryDate": "",
+    "minStock": 10,
+    "rating": 4.8,
+    "image": "/images/enterprise_laptop.png",
+    "updatedAt": "2026-07-18T05:15:00.000Z"
+  },
+  {
+    "id": "5027f9ba-0162-41a7-8c58-443c2ce7dd32",
+    "productId": "PROD-MOU",
+    "productName": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 25,
+    "quantity": 45,
+    "warehouseStock": {
+      "Chennai": 20,
+      "Coimbatore": 15,
+      "Bangalore": 10
+    },
+    "supplier": "Logitech Systems",
+    "manufacturingDate": "2026-02-15",
+    "expiryDate": "",
+    "minStock": 20,
+    "rating": 4.2,
+    "image": "/images/wireless_mouse.png",
+    "updatedAt": "2026-07-18T05:15:00.000Z"
+  },
+  {
+    "id": "91c3742c-b8cb-4cd2-8d63-0a54e5dc3097",
+    "productId": "PROD-KEY",
+    "productName": "Mechanical Keyboard",
+    "category": "Electronics",
+    "price": 75,
+    "quantity": 30,
+    "warehouseStock": {
+      "Chennai": 10,
+      "Coimbatore": 10,
+      "Bangalore": 10
+    },
+    "supplier": "Logitech Systems",
+    "manufacturingDate": "2026-03-01",
+    "expiryDate": "",
+    "minStock": 15,
+    "rating": 4.6,
+    "image": "/images/mechanical_keyboard.png",
+    "updatedAt": "2026-07-18T05:15:00.000Z"
+  },
+  {
+    "id": "a07b4264-be3d-4bfd-ad87-6ebda79fdffe",
+    "productId": "PROD-MLK",
+    "productName": "Organic Milk (1L)",
+    "category": "Food & Beverage",
+    "price": 2.99,
+    "quantity": 8,
+    "warehouseStock": {
+      "Chennai": 5,
+      "Coimbatore": 3,
+      "Bangalore": 0
+    },
+    "supplier": "Heritage Dairies",
+    "manufacturingDate": "2026-07-10",
+    "expiryDate": "2026-08-01",
+    "minStock": 30,
+    "rating": 4,
+    "image": "/images/organic_milk.png",
+    "updatedAt": "2026-07-18T05:15:00.000Z"
+  },
+  {
+    "id": "5e5dbc04-44fb-40d8-b606-f731c4ee5400",
+    "productId": "PROD-SOF",
+    "productName": "Ergonomic Sofa",
+    "category": "Furniture",
+    "price": 499,
+    "quantity": 12,
+    "warehouseStock": {
+      "Chennai": 4,
+      "Coimbatore": 4,
+      "Bangalore": 4
+    },
+    "supplier": "IKEA Solutions",
+    "manufacturingDate": "2026-04-12",
+    "expiryDate": "",
+    "minStock": 5,
+    "rating": 4.5,
+    "image": "/images/ergonomic_sofa.png",
+    "updatedAt": "2026-07-18T05:15:00.000Z"
+  },
+  {
+    "id": "970b4bfb-d520-4475-a646-159567a6a230",
+    "productId": "PROD-HDM",
+    "productName": "Noise Cancelling Headset",
+    "category": "Electronics",
+    "price": 129.99,
+    "quantity": 0,
+    "warehouseStock": {
+      "Chennai": 0,
+      "Coimbatore": 0,
+      "Bangalore": 0
+    },
+    "supplier": "Sony India",
+    "manufacturingDate": "2026-05-20",
+    "expiryDate": "",
+    "minStock": 12,
+    "rating": 4.7,
+    "image": "/images/noise_cancelling_headset.png",
+    "updatedAt": "2026-07-18T05:15:00.000Z"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "e99c2bf9-043f-4d91-9452-dd38e8b3df2d",
+    "timestamp": "2026-07-17T14:33:30.740Z",
+    "operator": "local-admin",
+    "role": "Admin",
+    "action": "Database Initialized",
+    "details": "System started and seed database loaded successfully."
+  },
+  {
+    "id": "137716c7-d221-4548-ad1f-ffb423ba4a0e",
+    "timestamp": "2026-07-17T15:33:30.740Z",
+    "operator": "local-admin",
+    "role": "Admin",
+    "action": "Stock Sync",
+    "details": "Synced stock levels across Chennai, Coimbatore, and Bangalore warehouses."
+  },
+  {
+    "id": "dcc69e09-93c4-4b36-8f6d-a9e9ee2cc1b3",
+    "timestamp": "2026-07-17T16:34:44.132Z",
+    "operator": "local-manager",
+    "role": "Manager",
+    "action": "User Authentication",
+    "details": "Simulated login of user local-manager with role Manager"
+  },
+  {
+    "id": "834c46fa-d285-4f0b-ade7-78b1a3e905d9",
+    "timestamp": "2026-07-17T16:34:57.363Z",
+    "operator": "local-employee",
+    "role": "Employee",
+    "action": "User Authentication",
+    "details": "Simulated login of user local-employee with role Employee"
+  },
+  {
+    "id": "2351d4cb-9bd0-45bd-b845-72a14ad58af7",
+    "timestamp": "2026-07-17T16:35:10.869Z",
+    "operator": "local-manager",
+    "role": "Manager",
+    "action": "User Authentication",
+    "details": "Simulated login of user local-manager with role Manager"
+  },
+  {
+    "id": "cfe6ee02-8b9e-42cb-8324-631eb8c0eddb",
+    "timestamp": "2026-07-17T16:35:13.519Z",
+    "operator": "local-admin",
+    "role": "Admin",
+    "action": "User Authentication",
+    "details": "Simulated login of user local-admin with role Admin"
+  },
+  {
+    "id": "f938233a-3e67-4497-9574-823ef33ea05f",
+    "timestamp": "2026-07-17T16:46:59.007Z",
+    "operator": "local-employee",
+    "role": "Employee",
+    "action": "User Authentication",
+    "details": "Simulated login of user local-employee with role Employee"
+  },
+  {
+    "id": "1a36575e-d3b9-478e-95ba-80a18954b7ab",
+    "timestamp": "2026-07-17T16:47:22.507Z",
+    "operator": "local-admin",
+    "role": "Admin",
+    "action": "User Authentication",
+    "details": "Simulated login of user local-admin with role Admin"
+  },
+  {
+    "id": "81652a7e-46f2-446c-8568-29e1756dc257",
+    "timestamp": "2026-07-18T03:36:39.254Z",
+    "operator": "local-admin",
+    "role": "Super Admin",
+    "action": "Add Product",
+    "details": "Created product Test Product (PROD-TEST)"
+  }
+]
