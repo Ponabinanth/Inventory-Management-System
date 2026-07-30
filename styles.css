@@ -1004,3 +1004,111 @@ select:focus, input:focus {
   .sidebar, .top-header, .fab, .no-print { display: none !important; }
   .main-content { padding: 0 !important; max-width: 100% !important; }
 }
+
+/* AI Chat Assistant Widget */
+.ai-chat-window {
+  position: fixed;
+  bottom: 100px;
+  right: 32px;
+  width: 350px;
+  height: 500px;
+  background: var(--panel-solid);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-card);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.ai-chat-window.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px) scale(0.95);
+}
+
+.ai-chat-header {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ai-chat-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-family: var(--font-display);
+}
+
+.ai-chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--bg-color);
+}
+
+.ai-msg {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.ai-msg.bot {
+  background: var(--panel-solid);
+  border: 1px solid var(--panel-border);
+  color: var(--ink);
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.ai-msg.user {
+  background: #8b5cf6;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.ai-chat-input-area {
+  padding: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 8px;
+  background: var(--panel-solid);
+}
+
+.ai-chat-input-area input {
+  flex: 1;
+  height: 38px;
+  border-radius: 20px;
+  padding: 0 16px;
+  background: var(--input-bg);
+  border: 1px solid var(--panel-border);
+  color: var(--ink);
+}
+
+.ai-chat-input-area button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.ai-chat-input-area button:hover {
+  transform: scale(1.1);
+}
