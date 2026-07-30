@@ -19,6 +19,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
   <script defer src="app.js"></script>
+  <script defer src="ai_assistant.js"></script>
 </head>
 <body>
 
@@ -863,6 +864,27 @@
         <button class="btn btn-primary" type="submit">Save User</button>
       </div>
     </form>
+  </div>
+</div>
+
+<!-- AI CHAT ASSISTANT WIDGET -->
+<button id="aiChatFabBtn" class="fab" style="bottom: 90px; background-color: #8b5cf6;" type="button" title="Ask AI Assistant">
+  <i class="fa-solid fa-robot"></i>
+</button>
+
+<div id="aiChatWindow" class="ai-chat-window hidden">
+  <div class="ai-chat-header">
+    <h3><i class="fa-solid fa-robot"></i> PulseStock AI</h3>
+    <button id="closeAiChatBtn" class="icon-btn text-xs text-white"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div id="aiChatMessages" class="ai-chat-messages">
+    <div class="ai-msg bot">
+      Hi! I'm your PulseStock AI Assistant. How can I help you manage your inventory today?
+    </div>
+  </div>
+  <div class="ai-chat-input-area">
+    <input type="text" id="aiChatInput" placeholder="Ask about stock, sales, or trends...">
+    <button id="aiChatSendBtn"><i class="fa-solid fa-paper-plane"></i></button>
   </div>
 </div>
 
